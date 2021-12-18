@@ -23,7 +23,7 @@ font:
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
-  save_to_clipboard: true
+  save_to_clipboard: false
 
 working_directory: None
 
@@ -39,6 +39,6 @@ key_bindings:
   - { key: E,         mods: Shift,          mode: Vi|~Search, action: ToggleBlockSelection    }
   - { key: E,                               mode: Vi|~Search, action: ToggleNormalSelection   }
   - { key: PageUp,                          mode: Vi|~Search, action: High                    }
-  - { key: Home,                            mode: Vi|~Search, action: Middle                  }
+  - { key: End,                             mode: Vi|~Search, action: Middle                  }
   - { key: PageDown,                        mode: Vi|~Search, action: Low                     }
   - { key: Escape,                          mode: ~Search,    action: ToggleViMode            }
