@@ -1,0 +1,44 @@
+env:
+  TERM: xterm-256color
+
+window:
+  padding:
+    x: 17
+    y: 17
+  
+  startup_mode: Maximized
+  dynamic_title: true
+
+scrolling:
+  history: 15000
+
+cursor:
+  style: Block
+
+font:
+  normal:
+    family: Noto Mono for Powerline   
+
+  size: 17
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: true
+
+working_directory: None
+
+key_bindings: 
+  # comfy vi mode overwrites, same shortcuts I use for bash
+  - { key: Left,      mods: Control,        mode: Vi|~Search, action: SemanticLeft            }
+  - { key: Right,     mods: Control,        mode: Vi|~Search, action: SemanticRightEnd        }
+  - { key: E,         mods: Control,        mode: Vi|~Search, action: Last                    }
+  - { key: A,         mods: Control,        mode: Vi|~Search, action: FirstOccupied           }
+  - { key: A,         mods: Shift|Control,  mode: Vi|~Search, action: First                   }
+  - { key: Return,                          mode: Vi|~Search, action: Copy                    }
+  - { key: Return,                          mode: Vi|~Search, action: ClearSelection          }
+  - { key: E,         mods: Shift,          mode: Vi|~Search, action: ToggleBlockSelection    }
+  - { key: E,                               mode: Vi|~Search, action: ToggleNormalSelection   }
+  - { key: PageUp,                          mode: Vi|~Search, action: High                    }
+  - { key: Home,                            mode: Vi|~Search, action: Middle                  }
+  - { key: PageDown,                        mode: Vi|~Search, action: Low                     }
+  - { key: Escape,                          mode: ~Search,    action: ToggleViMode            }

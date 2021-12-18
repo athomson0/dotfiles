@@ -1,0 +1,22 @@
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+
+xhost local:aidan > /dev/null
+
+export PATH=/home/aidan/winterwell/wwappbase.js/scripts:$PATH
+export WINTERWELL_HOME="/home/aidan/winterwell"
+export PATH=$WINTERWELL_HOME/code/script:$PATH
+
+# Powerline
+PROMPT_COMMAND='echo -en "\033]0;$(whoami)@$(hostname)|$(pwd|cut -d "/" -f 4-100)\a"'
+function _update_ps1() {
+    PS1=$(powerline-shell $?)
+}
+
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+
+eval "$(scmpuff init -s)"
+
+alias python="python3"
+alias alacritty="gtk-launch Alacritty"
