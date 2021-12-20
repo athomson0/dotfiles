@@ -47,3 +47,5 @@ key_bindings:
   - { key: End,                             mode: Vi|~Search, action: Middle                  }
   - { key: PageDown,                        mode: Vi|~Search, action: Low                     }
   - { key: Escape,                          mode: ~Search,    action: ToggleViMode            }
+  - { key: Up,        mods: Shift,          mode: ~Alt,       action: ScrollLineUp            }
+  - { key: Down,      mods: Shift,          mode: ~Alt,       action: ScrollLineDown          }
