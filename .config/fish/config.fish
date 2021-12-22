@@ -2,6 +2,7 @@ set -U fish_prompt_pwd_dir_length 0
 set fish_greeting
 
 set -x PATH $PATH /home/aidan/winterwell/code/script
+set -x PATH $PATH /usr/local/go/bin
 
 set -x WINTERWELL_HOME /home/aidan/winterwell
 set -x JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
