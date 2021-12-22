@@ -7,6 +7,8 @@ set -x PATH $PATH /usr/local/go/bin
 set -x WINTERWELL_HOME /home/aidan/winterwell
 set -x JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
 
+set -g __fish_git_prompt_show_informative_status 1
+
 alias ccat="highlight -O ansi --force"
 alias python="python3"
 alias alacritty="gtk-launch Alacritty"
