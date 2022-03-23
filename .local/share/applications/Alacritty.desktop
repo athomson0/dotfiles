@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 TryExec=alacritty
-Exec=/home/aidan/dotfiles/scripts/run-alacritty.sh
+Exec=/home/aidan/dotfiles/scripts/run-alacritty.sh %u
 Icon=Alacritty
 Terminal=false
 Categories=System;TerminalEmulator;
