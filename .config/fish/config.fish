@@ -41,6 +41,10 @@ alias gc="git commit -m "
 alias popcorn="ssh -D 4144 -q -C -fN vultrdev && /usr/bin/popcorn-time --proxy-server="socks5://127.0.0.1:4144""
 
 
+# Replace cat with bat (https://github.com/sharkdp/bat)
+alias cat="bat"
+
+
 #set fish_function_path $fish_function_path "/usr/share/powerline/bindings/fish"
 #source /usr/share/powerline/bindings/fish/powerline-setup.fish
 #powerline-setup
